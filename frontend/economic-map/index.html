@@ -1,11 +1,75 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>MacroeconomicsMap - 世界と日本の経済データ可視化マップ</title>
+    <meta name="description" content="世界48カ国と日本の都道府県、企業、市区町村の経済データを直感的に可視化するインタラクティブマップ。GDP、売上高、人口データを地図上で探索できます。" />
+    <meta name="keywords" content="経済データ,GDP,可視化,地図,マクロ経済,日本経済,世界経済,企業データ,都道府県,市区町村" />
+    <meta name="author" content="Manus AI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://macroeconomics-map.vercel.app/" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="MacroeconomicsMap - 世界と日本の経済データ可視化マップ" />
+    <meta property="og:description" content="世界48カ国と日本の都道府県、企業、市区町村の経済データを直感的に可視化するインタラクティブマップ。GDP、売上高、人口データを地図上で探索できます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://macroeconomics-map.vercel.app/" />
+    <meta property="og:image" content="https://macroeconomics-map.vercel.app/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="MacroeconomicsMap" />
+    <meta property="og:locale" content="ja_JP" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="MacroeconomicsMap - 世界と日本の経済データ可視化マップ" />
+    <meta name="twitter:description" content="世界48カ国と日本の都道府県、企業、市区町村の経済データを直感的に可視化するインタラクティブマップ。GDP、売上高、人口データを地図上で探索できます。" />
+    <meta name="twitter:image" content="https://macroeconomics-map.vercel.app/og-image.png" />
+    <meta name="twitter:creator" content="@ManusAI" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#1f2937" />
+    <meta name="msapplication-TileColor" content="#1f2937" />
+    <meta name="application-name" content="MacroeconomicsMap" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "MacroeconomicsMap",
+      "description": "世界48カ国と日本の都道府県、企業、市区町村の経済データを直感的に可視化するインタラクティブマップ",
+      "url": "https://macroeconomics-map.vercel.app/",
+      "applicationCategory": "DataVisualization",
+      "operatingSystem": "Web",
+      "author": {
+        "@type": "Organization",
+        "name": "Manus AI"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      },
+      "featureList": [
+        "世界48カ国のGDPデータ可視化",
+        "日本47都道府県の経済データ",
+        "主要企業29社の売上データ",
+        "市区町村50地域の人口データ",
+        "インタラクティブな地図表示",
+        "3段階ズーム機能"
+      ]
+    }
+    </script>
+    
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-    <title>経済データ可視化マップ</title>
   </head>
   <body>
     <div id="root"></div>
